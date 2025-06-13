@@ -86,9 +86,9 @@ export const hotel = [
 
 // Special Offers Dummy Data
 export const specialOffers = [
-    { _id: 1, title: "Summer Escape Package", description: "Enjoy a complimentary night and daily breakfast", priceOff: 25, expiryDate: "Aug 31", image: specialOfferCardImg1 },
-    { _id: 2, title: "Romantic Getaway", description: "Special couples package including spa treatment", priceOff: 20, expiryDate: "Sep 20", image: specialOfferCardImg2 },
-    { _id: 3, title: "Luxury Retreat", description: "Book 60 days in advance and save on your stay at any of our luxury properties worldwide.", priceOff: 30, expiryDate: "Sep 25", image: specialOfferCardImg3 },
+    { _id: 1, title: "Songkran Festival", description: "Enjoy a complimentary night and daily breakfast", priceOff: 20, expiryDate: "Apr 16", image: specialOfferCardImg1 },
+    { _id: 2, title: "Halloween", description: "Special couples package including spa treatment", priceOff: 66, expiryDate: "Nov 1", image: specialOfferCardImg2 },
+    { _id: 3, title: "Christmas", description: "Book 60 days in advance and save on your stay at any of our luxury properties worldwide.", priceOff: 45, expiryDate: "Dec 26", image: specialOfferCardImg3 },
 ];
 
 // Testimonials Dummy Data

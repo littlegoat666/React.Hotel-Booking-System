@@ -63,7 +63,7 @@ const RoomDetails = () => {
             </div>
             
             {/* Room Price */}
-            <p className='text-2xl font-medium'>${ room.pricePerNight } / night</p>
+            <p className='text-2xl font-medium'>${ room.pricePerNight } / Night</p>
         </div>
 
         {/* CheckIn CheckOut Form */}
@@ -112,12 +112,12 @@ const RoomDetails = () => {
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popular in the 1960s with the release of Let sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Ald PageMaker including versions of Lorem Ipsum.</p>
         </div>
         
-        {/* Hosted By
+        {/* Hosted By */}
         <div className='flex flex-col item-start gap-4'>
-            <div className='flex grp-4'>
-                <img src={ room.hotel.owner.image } alt='Host' className='h-14 2-14 md:h-18 md:w-18 rounded-full' />
+            <div className='flex gap-4'>
+                <img src={ room.hotel.owner.image } alt='Host' className='h-14 w-14 md:h-18 md:w-18 rounded-full' />
                 <div>
-                    <p className='yext-lg md:text-xl'>Hosted By { room.hotel.name }</p>
+                    <p className='text-lg md:text-xl'>Hosted By { room.hotel.name }</p>
                     <div className='flex items-center mt-1'>
                         <StarRating />
                         <p className='ml-2'>200+ reviews</p>
@@ -126,7 +126,7 @@ const RoomDetails = () => {
             </div>
         </div>
 
-        <button className='px-6 py-2.5 mt-4 rounded text-white bg-primary hover:bg-primary-dull transition-all cursor-pointer'>Contact Now</button> */}
+        <button className='px-6 py-2.5 mt-4 rounded text-white bg-primary hover:bg-primary-dull transition-all cursor-pointer'>Contact Now</button>
 
     </div>
   )

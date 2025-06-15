@@ -88,7 +88,7 @@ const Navbar = () => {
                     </UserButton.MenuItems>
                 </UserButton>}
 
-                <img onClick={()=> setIsMenuOpen(!isMenuOpen)} src={ assets.menuIcon } alt='' className={`$ {isScrolled && 'invert'} h-4`} />
+                <img onClick={() => setIsMenuOpen(!isMenuOpen)} src={ assets.menuIcon } alt='' className={`$ {isScrolled && 'invert'} h-4`} />
             </div>
 
             {/* Mobile Menu */}

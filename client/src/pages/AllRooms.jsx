@@ -15,7 +15,7 @@ const CheckBox = ({ label, selected = false, onChange = () => { }}) => {
 const RadioButton = ({ label, selected = false, onChange = () => { }}) => {
     return (
         <label className='flex gap-3 items-center cursor-pointer mt-2 text-sm'>
-            <input type='radio' name='sortOption' checked={ selected } onChange={()=> onChange(label)} />
+            <input type='radio' name='sortOption' checked={ selected } onChange={() => onChange(label)} />
             <span className='font-light select-none'>{ label }</span>
         </label>
     )
@@ -82,7 +82,7 @@ const AllRooms = () => {
                         </div>
 
                         {/* Room Price per Night */}
-                        <p className='text-xl font-medium text-gray-700'>${ room.pricePerNight } / night</p>
+                        <p className='text-xl font-medium text-gray-700'>${ room.pricePerNight } / Night</p>
                     </div>
                 </div>
             ))}

@@ -14,7 +14,7 @@ const RecommendedRooms = () => {
         <Title title='Our recommend rooms' subTitle='Explore our top-rated hotels in popular destinations' />
 
         <div className='flex flex-wrap items-center justify-center gap-6 mb-20'>
-            { roomsDummyData.slice(0, 4).map(( room, index ) => (
+            { roomsDummyData.slice(0, 4).map((room, index) => (
                 <HotelCard key={ room._id } room={ room } index={ index } />
             ))}
         </div>

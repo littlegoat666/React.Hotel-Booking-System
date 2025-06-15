@@ -18,7 +18,7 @@ const Hero = () => {
                 </div>
                 <input list='destinations' id='destinationInput' type='text' className='rounded border border-black-200 px-3 py-1.5 mt-1.5 text-sm outline-none' placeholder='Type here' required />
                 <datalist id='destinations'>
-                    { hotel.map(( city, index ) => (
+                    { hotel.map((city, index) => (
                         <option value={ city } key={ index } />
                     ))}
                 </datalist>

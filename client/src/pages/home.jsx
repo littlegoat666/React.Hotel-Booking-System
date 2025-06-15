@@ -6,7 +6,7 @@ import Testimonial from '../components/Testimonial'
 import NewLetter from '../components/NewLetter'
 
 const Home = () => {
-  return (
+    return (
     <>
         <Hero />
         <RecommendedRooms />

@@ -5,17 +5,17 @@ import Title from './Title'
 import { useNavigate } from 'react-router-dom'
 
 const RecommendedRooms = () => {
-  
-  const navigate = useNavigate()
 
-  return (
+    const navigate = useNavigate()
+    
+    return (
     <div className='flex flex-col items-center px-6 md:px-16 lg:px-24 bg-slate-50 py-20'>
         
         <Title title='Our recommend rooms' subTitle='Explore our top-rated hotels in popular destinations' />
 
         <div className='flex flex-wrap items-center justify-center gap-6 mb-20'>
             { roomsDummyData.slice(0, 4).map(( room, index ) => (
-                <HotelCard key={ room._id } room={ room } index={ index }/>
+                <HotelCard key={ room._id } room={ room } index={ index } />
             ))}
         </div>
 

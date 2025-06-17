@@ -39,7 +39,7 @@ const clerkWebhooks = async (req, res) => {
             }
 
             case 'user.deleted': {
-                await User.findByIdAndDelete(data.id);
+                await User.findByIdAndDelete(data);
                 break;
             }
 
@@ -47,7 +47,7 @@ const clerkWebhooks = async (req, res) => {
                 break;
         }
         
-        res.json({ success: true, message: 'Webhook Received'})
+        res.json({ success: true, message: 'Webhook Received' })
 
     } catch (error) {
         console.log(error.message);

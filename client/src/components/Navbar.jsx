@@ -28,10 +28,10 @@ const Navbar = () => {
 
     useEffect(() => {
 
-        if(location.pathname !== '/') {
+        if (location.pathname !== '/') {
             setIsScrolled(true);
             return;
-        }else{
+        } else {
             setIsScrolled(false);
         }
         setIsScrolled(prev => location.pathname !== '/' ? true : prev);
@@ -59,7 +59,7 @@ const Navbar = () => {
                         <div className={`${ isScrolled ? 'bg-gray-700' : 'bg-black'} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
                     </a>
                 ))}
-                <button className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${ isScrolled ? 'text-black' : 'text-black'} transition-all`} onClick={() => navigate('/owner')}>
+                <button className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${ isScrolled ? 'text-black' : 'text-black' } transition-all`} onClick={() => navigate('/owner')}>
                     Dashboard
                 </button>
             </div>
